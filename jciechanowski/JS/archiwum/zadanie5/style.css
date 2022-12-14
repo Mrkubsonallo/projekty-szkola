@@ -1,0 +1,21 @@
+body
+{
+    color: #dbdbdb;
+    background-color: #222;
+    font-size: 18px;
+}
+
+.small
+{
+    font-size: 12px;
+}
+
+.medium
+{
+    font-size: 18px;
+}
+
+.big
+{
+    font-size: 24px;
+}

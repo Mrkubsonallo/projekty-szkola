@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pogoowie komputerowe</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="baner">
+            <img src="animacja.gif" alt="">
+        </div>
+        <div id="menu">
+            <a href="index.html">O nas</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <h3>Formularz kontaktowy</h3>
+        <div id="table">
+                <table>
+                    <tr>
+                        <td>Imię: </td>
+                        <td><input type="text" id="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko: </td>
+                        <td><input type="text" id="lname"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail: </td>
+                        <td><input type="text" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Usługa: </td>
+                        <td>
+                            <select name="" id="usl">
+                                <option value="fix">naprawa komputera</option>
+                                <option value="data">odzyskiwanie danych</option>
+                                <option value="os">problemy z oprogramowaniem</option>
+                                <option value="lan">konfiguracja sieci LAN</option>
+                                <option value="other">inne</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" name="" id="chek">Wyślij kopię wiadomości</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Reset" id="reset"><button id="send">Prześlij</button></td>
+                    </tr>
+                </table>
+        </div>
+        <div id="p">
+            <p id="result"></p>
+        </div>
+        <div id="footer">
+            <p>Autor strony: <b>00000000000</b></p>
+        </div>
+    </div>
+</body>
+</html>

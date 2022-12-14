@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P19-21a</title>
+    <meta charset="utf-8" />
+	<meta name="author" content="Zenon Pędziwiatr">
+	<script>
+		var kwadrat = function(bok)
+		{
+			this.bok = bok
+			this.obliczPole = obliczPole
+			this.obliczObwod = obliczObwod
+		}
+
+		function obliczPole()
+		{
+			return this.bok * this.bok
+		}
+
+		function obliczObwod()
+		{
+			return this.bok * 4
+		}
+	</script>
+</head>
+<body >
+	<script>
+		let kwadrat1 = new kwadrat(5)
+		let kwadrat2 = new kwadrat(7)
+		document.write("Pole kwadratu1 wynosi: " + kwadrat1.obliczPole())
+		document.write("<br>Obwód kwadratu2 wynosi: " + kwadrat2.obliczObwod())
+	</script>
+</body>
+</html>

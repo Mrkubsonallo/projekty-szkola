@@ -1,0 +1,7 @@
+1. SELECT imie, nazwisko FROM kadra WHERE stanowisko = "fryzjer";
+
+2. SELECT COUNT(id) FROM uslugi WHERE rodzaj = 2;
+
+3. CREATE	USER 'fryzjer' @'localhots'  IDENTIFIED BY 'Fryz12';
+
+4. GRANT CREATE, UPDATE ON kadra TO 'fryzjer';

@@ -1,0 +1,86 @@
+body
+{
+    font-family: Georgia;
+}
+
+#left
+{
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+}
+
+#right
+{
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+}
+
+#left, #right
+{
+    float: left;
+}
+
+#footer
+{
+    clear: both;
+    background-color: DimGray;
+    color: white;
+}
+
+#right p#img, #right ul
+{
+    float: left;
+}
+
+#right p#img
+{
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+    padding: 10px;
+    clear: both;
+}
+
+img
+{
+    padding: 10px;
+    border: solid 1px white;
+}
+
+#btn1
+{
+    background-color: Indigo;
+}
+
+#btn2
+{
+    background-color: SteelBlue;
+}
+
+#btn3
+{
+    background-color: Olive;
+}
+
+.disc
+{
+    list-style-type: disc;
+}
+
+.square
+{
+    list-style-type: square;
+}
+
+.circle
+{
+    list-style-type: circle;
+}

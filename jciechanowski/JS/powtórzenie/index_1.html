@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #222;
+            color: #dbdbdb;
+            user-select: none;
+        }
+    </style>
+    <script>
+        function check()
+        {
+            let r = document.getElementById("r").value
+            let odp = document.getElementById("odp")
+            let licznik = 0
+            for(x=-r; x<=r; x++)
+                for(y=-r; y<=r; y++)
+                    if(x*x + y*y < r*r)
+                        licznik++
+            odp.innerHTML = "Liczba punktów kratoeych wynosi: " + licznik;
+        }
+    </script>
+</head>
+<body>
+    <h2>Punkty kratowe</h2>
+    Podaj promień koła: <input type="number" id="r"><br><br>
+    <button onclick="check()">Sprawdź</button><br><br>
+    <p id="odp"></p>
+</body>
+</html>

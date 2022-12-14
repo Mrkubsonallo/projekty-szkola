@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#222"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Podaj wagę"
+        android:textColor="#DBDBDB"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="40px"/>
+
+    <EditText
+        android:id="@+id/editWaga"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_marginTop="40px"
+        android:hint="np. 70"
+        android:gravity="center"
+        android:textColor="#dbdbdb"
+        android:backgroundTint="#452296"
+        android:textColorHint="#757575"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Podaj wzrost"
+        android:textColor="#dbdbdb"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="40px"/>
+
+    <EditText
+        android:id="@+id/editWzrost"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_marginTop="40px"
+        android:hint="np. 180"
+        android:gravity="center"
+        android:textColor="#dbdbdb"
+        android:backgroundTint="#452296"
+        android:textColorHint="#757575"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/view_below"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:textColor="#dbdbdb"
+            android:textSize="20dp"
+            android:text="Kobieta"
+            android:id="@+id/radioK"
+            android:buttonTint="#452296"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:textColor="#dbdbdb"
+            android:textSize="20dp"
+            android:text="Mężczyzna"
+            android:id="@+id/radioM"
+            android:buttonTint="#452296"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textBMI"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:textColor="#dbdbdb"
+        android:layout_marginTop="40px"
+        android:textSize="25dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:textColor="#dbdbdb"
+        android:layout_marginTop="40px"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/Licz"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Oblicz"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:background="#452296"
+        android:textColor="#dbdbdb"
+        android:onClick="licz"
+        />
+
+</LinearLayout>

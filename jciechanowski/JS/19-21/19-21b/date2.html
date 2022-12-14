@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Z19-21b</title>
+</head>
+<body>
+    <button id="button" onclick="wykonaj()">Pokaż datę</button>
+    <p id="data"> </p>
+    <script>
+        var t = new Date();
+        var miesiace = new Array("Stycznia","lutego", "marca", "kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","gudnia");
+
+        let p = document.getElementById("data")
+        function wykonaj()
+        {
+            console.log("test")
+            if(document.getElementById("data") == "")
+                p.innerHTML = t.getDate() + " " + miesiace[t.getMonth()] + " " + t.getFullYear()
+            else
+                p.innerHTML = ""
+            
+        }
+    </script>
+</body>
+</html>

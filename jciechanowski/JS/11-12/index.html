@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Podaj długość boku a:"))
+        let b = parseInt(prompt("Podaj długość boku b:"))
+        let c = parseInt(prompt("Podaj długość boku c:"))
+
+        if((a<b+c) && (b<a+c) && (c<a+b))
+        {
+            if(Math.pow(a, 2)+Math.pow(b, 2)==Math.pow(c, 2) || Math.pow(a, 2)+Math.pow(c, 2)==Math.pow(b, 2) || Math.pow(b, 2)+Math.pow(c, 2)==Math.pow(a, 2))
+                document.write("trójkąt jest prostokątny")
+            else if(Math.pow(a, 2)+Math.pow(b, 2)>Math.pow(c, 2) || Math.pow(a, 2)+Math.pow(c, 2)>Math.pow(b, 2) || Math.pow(b, 2)+Math.pow(c, 2)>Math.pow(a, 2))
+                document.write("trójkąt jest ostrokątny")
+            else
+                document.write("trójkąt jest rozwartokątny")
+        }
+        else
+            document.write("to nie jest trójkąt")
+    </script>
+</body>
+</html>

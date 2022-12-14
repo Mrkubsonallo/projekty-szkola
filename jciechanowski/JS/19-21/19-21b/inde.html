@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P19-21b</title>
+    <meta charset="utf-8" />
+	<meta name="author" content="Zenon Pędziwiatr">
+    <link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		var Pracownik =new Object();
+		Pracownik.imie = "Adam";
+		Pracownik.nazwisko = "Nowak";
+		Pracownik.wiek = 32;
+		Pracownik.piszInfo = function ()
+			{
+				document.write("imię i nazwisko: <b>" + this.imie + " " + this.nazwisko + "</b>, wiek: <b>" + this.wiek +"</b>")
+			}
+	</script>
+</head>
+<body >
+	<script>
+		Pracownik.piszInfo();
+		document.write("<br/>" + Pracownik.imie);
+	</script>
+</body>
+</html>

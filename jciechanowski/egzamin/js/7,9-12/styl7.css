@@ -1,0 +1,63 @@
+body
+{
+    font-family: Helvetica;
+}
+
+#banner
+{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+#main
+{
+    background-color: rgb(176, 196, 222);
+    padding: 50px;
+    text-align: center;
+}
+
+#left
+{
+    background-color: rgb(70, 130, 180);
+    color: #fff;
+    height: 300px;
+    width: 80%;
+    float: left;
+}
+
+#right
+{
+    background-color: rgb(70, 130, 180);
+    color: #fff;
+    height: 300px;
+    width: 20%;
+    float: left;
+}
+
+#footer
+{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 30px;
+    text-align: center;
+    clear: both;
+}
+
+#main > img
+{
+    padding: 3px;
+    border: dashed blue 1px;
+    border-radius: 10px;
+}
+
+#left > img
+{
+    height: 40%;
+}
+
+#left > img:hover
+{
+    border: solid white 1px;
+}

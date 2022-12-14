@@ -1,0 +1,21 @@
+body
+{
+    color: #dbdbdb;
+    background-color: #222;
+    user-select: none;
+}
+
+.buttons
+{
+    cursor: pointer;
+}
+
+.b
+{
+    font-weight: bold;
+}
+
+.em
+{
+    font-style: italic;
+}

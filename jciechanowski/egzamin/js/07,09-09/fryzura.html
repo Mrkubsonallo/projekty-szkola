@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Usługi fryzjerskie</title>
+    <link rel="stylesheet" href="styl2.css">
+    <!--<script src="skrypt.js" defer></script>-->
+</head>
+<body>
+    <div id="left1">
+        <h2><a href="index.html">SALON FRYZJERSKI</a></h2>
+        <img src="obraz2.jpg" alt="Czesanie">
+    </div>
+    <div id="right1">
+        <h2>MENU</h2>
+    </div>
+    <div id="right2">
+        <ol>
+            <li>
+                <a href="fryzura.html">Strzyżenie</a>
+                <ul>
+                    <li>krótkie</li>
+                    <li>średnie</li>
+                    <li>półdługie</li>
+                    <li>długie</li>
+                </ul>
+            </li>
+            <li>Czesanie</li>
+            <li>Koloryzacja</li>
+        </ol>
+    </div>
+    <div id="left2">
+        <h3>Dziś promocja na strzyżenie włosów</h3>
+        <input type="radio" name="select" id="krotkie" value="25">Krótkie<br>
+        <input type="radio" name="select" id="srednie" value="30">Średnie<br>
+        <input type="radio" name="select" id="poldlugie" value="40">Półdługie<br>
+        <input type="radio" name="select" id="dlugie" value="50">Długie<br>
+        <button id="send">Odkryj promocję</button>
+        <p id="wynik"></p>
+    </div>
+    <div id="right3">
+        <img src="obraz1.jpg" alt="Fryzjer">
+    </div>
+    <div id="footer">
+        <p>Autor: PESEL</p>
+    </div>
+    <script>
+        const click = document.getElementById("send")
+        const result = document.getElementById("wynik")
+
+        const short = document.getElementById("krotkie")
+        const medium = document.getElementById("srednie")
+        const halflong = document.getElementById("poldlugie")
+        const long = document.getElementById("dlugie")
+
+        click.addEventListener('click', ()=>{
+            if(short.checked)
+                result.innerHTML = short.value
+            else if(medium.checked)
+                result.innerHTML = medium.value
+            else if(halflong.checked)
+                result.innerHTML = halflong.value
+            else if(long.checked)
+                result.innerHTML = long.value
+        })
+    </script>
+</body>
+</html>

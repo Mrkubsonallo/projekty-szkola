@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="skrypt.js" defer></script>-->
+</head>
+<body>
+    <button id="bold"><b>B</b></button>
+    <button id="ital"><em>I</em></button>
+    <input type="color" id="color">
+    <select id="font">
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+        <option value="22">22</option>
+        <option value="24">24</option>
+        <option value="26">26</option>
+        <option value="28">28</option>
+        <option value="30">30</option>
+    </select>
+    <p class="paragraf">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut scelerisque leo. Quisque lobortis sem id feugiat convallis. Curabitur cursus purus ac leo ultrices, id rutrum sem sagittis. Phasellus luctus elit rhoncus, mollis eros vel, convallis odio. Maecenas eu felis risus. Fusce pharetra nunc a lacus malesuada pretium. Proin condimentum purus justo, ac tempus nisi rutrum nec. Donec at commodo ligula.
+    </p>
+    
+</body>
+<script>
+        const font = document.querySelector("#font")
+        const bold = document.querySelector("#bold")
+        const ital = document.querySelector("#ital")
+        const color = document.querySelector("#color")
+
+
+        bold.addEventListener('click', ()=>{
+            var test = document.getElementById("paragraf")
+            test.style.fontWeight = 'bold'
+            
+        })
+    </script>
+</html>

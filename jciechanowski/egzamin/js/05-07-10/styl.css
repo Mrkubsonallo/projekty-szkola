@@ -1,0 +1,76 @@
+body
+{
+    background-color: #99ffcc;
+}
+
+#container
+{
+    width: 1000px;
+    margin: auto;
+}
+
+#baner
+{
+    background-color: #9f6;
+    height: 200px;
+}
+
+#menu
+{
+    background-color: #66ccff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mains
+{
+    width: 310px;
+    padding: 10px;
+    float: left;
+}
+
+#footer
+{
+    background-color: #66ccff;
+    color: #066;
+    text-align: right;
+    height: 30px;
+    padding: 20px;
+    clear: both;
+}
+
+a
+{
+    color: #066;
+    margin: 50px;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+h2,h3
+{
+    text-align: center;
+}
+
+#send
+{
+    background-color: #0f0;
+}
+
+#reset
+{
+    background-color: #f00;
+}
+
+#table
+{
+    display: flex;
+    justify-content: center;
+}
+
+#p
+{
+    display: flex;
+    justify-content: center;
+}

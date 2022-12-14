@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #222;
+            color: #dbdbdb;
+            user-select: none;
+        }
+    </style>
+    <script>
+        function add()
+        {
+            let list = document.querySelector("#list")
+            let text = document.querySelector("#text").value
+            let option = document.createElement("option")
+            option.appendChild(document.createTextNode(text))
+            list.appendChild(option)
+        }
+    </script>
+</head>
+<body>
+    <h3>Dodaj do listy rozwijanej</h3>
+    <input type="text" id="text">
+    <button onclick="add()">Dodaj</button><br><br>
+    <select id="list"></select>
+</body>
+</html>

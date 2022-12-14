@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P19-21a</title>
+    <meta charset="utf-8" />
+	<meta name="author" content="Zenon Pędziwiatr">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		var Osoba = function (imie, nazwisko, wiek)
+			{
+				this.imie = imie;
+				this.nazwisko = nazwisko;
+				this.wiek = wiek;
+				this.piszInfo = piszInfo;
+			}
+			
+		function piszInfo()
+			{
+				document.write("imię i nazwisko: <b>" + this.imie + " " + this.nazwisko + "</b>, wiek: <b>" + this.wiek +"</b>")
+			}
+	</script>
+</head>
+<body >
+	<script>
+		var Student = new Osoba("Karol", "Krawczyk", 21); // Utworzenie obiektu - 1 sposób
+		var Studentka  = new Osoba(); //Utworzenie obiektu - 2 sposób
+		Studentka.imie = "Alina";
+		Studentka.nazwisko = "Zając";
+		Studentka.wiek = 18;
+	</script>
+	<script>
+		Student.piszInfo();
+		document.write("<br/>" + Studentka.imie);
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+    <script>
+        function zamiana(elem)
+        {
+            let do_zmiany = elem.getAttribute('src')
+            let left = document.getElementById("imgl")
+            left.setAttribute('src', do_zmiany)
+        }
+
+        function fav_zmiana(elem)
+        {
+            let src_val = elem.getAttribute('src')
+            if(src_val == "img/icon-off.png")
+                elem.setAttribute('src', "img/icon-on.png")
+            else
+                elem.setAttribute('src', "img/icon-off.png")
+        }
+    </script>
+</head>
+<body>
+    <div id="banner">
+        <h2>Galeria miejsc ciekawych</h2>
+    </div>
+    <div id="main">
+        <img src="img/lanzarotte.jpg" alt="galeria" id="imgl">
+    </div>
+    <div id="left">
+        <h3>Przeglądaj zdjęcia</h3>
+        <img src="img/lanzarotte.jpg" alt="lanzarotte" onclick="zamiana(this)">
+        <img src="img/pekin.jpg" alt="pekin" onclick="zamiana(this)">
+        <img src="img/serengeti.jpg" alt="serengeti" onclick="zamiana(this)">
+        <img src="img/wenecja.jpg" alt="wenecja" onclick="zamiana(this)">
+        <img src="img/tajlandia.jpg" alt="tajlandia" onclick="zamiana(this)">
+    </div>
+    <div id="right">
+        <h3>Obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>Polub nas <img src="img/icon-off.png" alt="icon-off" onclick="fav_zmiana(this)"></p>
+        <a href="https://pixabay.com/" target="__blank">Odkryj więcej zdjęć</a>
+    </div>
+    <div id="footer">
+        Autor: 00000000000
+    </div>
+</body>
+</html>

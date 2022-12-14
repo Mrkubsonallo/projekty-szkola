@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P19-21c</title>
+    <meta charset="utf-8" />
+	<meta name="author" content="Zenon Pędziwiatr">
+    <link rel="shortcut icon" href="favicon.ico" />
+	<script>
+		var Sportowiec = { imie: "Zbigniew", nazwisko: "Kowal", dyscyplina: "tenis", piszInfo: wizytowka}
+		function wizytowka()
+			{
+				document.write("imię i nazwisko: <b>" + this.imie + " " + this.nazwisko + "</b>, dyscyplina: <b>" + this.dyscyplina +"</b>")
+			}
+	</script>
+</head>
+<body >
+	<script>
+		Sportowiec.piszInfo();
+		document.write("<br/>" + Sportowiec.imie);
+	</script>
+</body>
+</html>

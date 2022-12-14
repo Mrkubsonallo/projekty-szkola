@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Przyporządkuj państwo do flagi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/polska"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds = "true"
+        android:contentDescription="Ok" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/odp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Niemcy" />
+
+        <RadioButton
+            android:id="@+id/odp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Włochy" />
+
+        <RadioButton
+            android:id="@+id/odp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Polska" />
+
+        <RadioButton
+            android:id="@+id/odp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Francja" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/sprawdz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprawdz"
+        android:background="#62AA71"
+        android:padding="10dp"
+        android:layout_below="@id/odp4"
+        android:layout_alignParentLeft="true"
+        android:onClick="Sprawdz" />
+
+    <TextView
+        android:id="@+id/odpowiedz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+body
+{
+    background-color: #222;
+    color: #dbdbdb;
+}
+
+input
+{
+    border: #dbdbdb solid 1px;
+    background-color: #222;
+    color: #dbdbdb;
+    margin: 5px;
+}
+
+textarea
+{
+    border: #dbdbdb solid 1px;
+    background-color: #222;
+    color: #dbdbdb;
+    margin: 5px;
+    
+}
+
+table
+{
+    border-collapse: collapse;
+}

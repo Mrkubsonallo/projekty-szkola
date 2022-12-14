@@ -1,0 +1,52 @@
+body
+{
+    font-family: Garamond;
+}
+
+#banner
+{
+    background-color: saddlebrown;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+}
+
+#left
+{
+    background-color: tan;
+    height: 500px;
+    width: 40%;
+    float: left;
+}
+
+.rights
+{
+    background-color: tan;
+    height: 250px;
+    width: 60%;
+    float: left;
+}
+
+#footer
+{
+    background-color: saddlebrown;
+    color: #fff;
+}
+
+form
+{
+    background-color: saddlebrown;
+    color: #fff;
+    padding: 10px 30px 10px 30px;
+    width: 300px;
+}
+
+input
+{
+    margin: 5px;
+}
+
+p::before
+{
+    content: "STATUS: ";
+}

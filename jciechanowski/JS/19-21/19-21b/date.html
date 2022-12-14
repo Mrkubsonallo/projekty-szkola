@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Z19-21b</title>
+</head>
+<body>
+    <script>
+        let date = new Date()
+        let day = new Date().getDate()
+        let month = new Date().getMonth()
+        let year = new Date().getFullYear()
+
+        switch(month)
+        {
+            case 0:
+                month = "stycznia"
+                break
+            case 1:
+                month = "lutego"
+                break
+            case 2:
+                month = "marca"
+                break
+            case 3:
+                month = "kwiecietnia"
+                break
+            case 4:
+                month = "maja"
+                break
+            case 5:
+                month = "czerwica"
+                break
+            case 6:
+                month = "lipica"
+                break
+            case 7:
+                month = "sierpnia"
+                break
+            case 8:
+                month = "września"
+                break
+            case 9:
+                month = "paźdiernika"
+                break
+            case 10:
+                month = "listopada"
+                break
+            case 11:
+                month = "grudnia"
+                break
+        }
+
+        document.write(day + " " + month + " " + year)
+    </script>
+</body>
+</html>
