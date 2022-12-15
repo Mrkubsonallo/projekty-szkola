@@ -1,0 +1,47 @@
+body
+{
+    background-color: #222;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6
+{ 
+    display: flex;
+    width: 20%;
+    height: 100px;
+    color: #dbdbdb;
+    float: left;
+    justify-content: center;
+    align-items : center;
+}
+
+.row1, .row3, .row5
+{ 
+    background-color: rgb(71, 179, 39);
+}
+
+.row2, .row4, .row6
+{ 
+    background-color: rgb(170, 18, 18);
+}
+
+#calendar
+{
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto;
+    background-color: #fff;
+}
+
+#calendar div
+{
+   margin: auto;
+   width: 80%;
+   margin-bottom: 20px;
+   height: 20vh;    /*dodać dynamiczną wysokość: poniżej 1200px width 10vh powyżej 20vh*/
+}
+#calendar div
+{
+   margin-bottom: 0;
+
+}
