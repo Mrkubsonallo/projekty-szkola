@@ -7,16 +7,23 @@ function calendar_build()
     for(let i=1; i<25; i++)
     {
         if(i>=1 && i<=4)
-            calendar.innerHTML += '<div class="row1" id="field'+i+'">'+i+'</div>'
+            calendar.innerHTML += '<div class="row1" id="field'+i+'" onclick="clicked(this)">'+i+'</div>'
         else if(i>=5 && i<=8)
-            calendar.innerHTML += '<div class="row2" id="field'+i+'">'+i+'</div>'
+            calendar.innerHTML += '<div class="row2" id="field'+i+'" onclick="clicked(this)">'+i+'</div>'
         else if(i>=9 && i<=12 )
-            calendar.innerHTML += '<div class="row3" id="field'+i+'">'+i+'</div>'
+            calendar.innerHTML += '<div class="row3" id="field'+i+'" onclick="clicked(this)">'+i+'</div>'
         else if(i>=13 && i<=16)
-            calendar.innerHTML += '<div class="row4" id="field'+i+'">'+i+'</div>'
+            calendar.innerHTML += '<div class="row4" id="field'+i+'" onclick="clicked(this)">'+i+'</div>'
         else if(i>=17 && i<=20)
-            calendar.innerHTML += '<div class="row5" id="field'+i+'">'+i+'</div>'
+            calendar.innerHTML += '<div class="row5" id="field'+i+'" onclick="clicked(this)">'+i+'</div>'
         else if(i>=21 && i<=24)
-            calendar.innerHTML += '<div class="row6" id="field'+i+'">'+i+'</div>'
+            calendar.innerHTML += '<div class="row6" id="field'+i+'" onclick="clicked(this)">'+i+'</div>'
     }
+}
+
+function clicked(element)
+{
+    let id_vla = element.getAttribute('id')
+    let date = new Date
+    let month = date.getDate()
 }
