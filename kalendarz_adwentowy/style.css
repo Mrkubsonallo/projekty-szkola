@@ -30,7 +30,7 @@ body
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: auto;
-    background-color: #fff;
+    background-color: #222;
 }
 
 #calendar div
@@ -39,9 +39,4 @@ body
    width: 80%;
    margin-bottom: 20px;
    height: 20vh;    /*dodać dynamiczną wysokość: poniżej 1200px width 10vh powyżej 20vh*/
-}
-#calendar div
-{
-   margin-bottom: 0;
-
 }
